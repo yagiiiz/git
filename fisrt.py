@@ -1,1 +1,1 @@
-print('hello    ')
+print('Hello World') #Merhaba Dünya
