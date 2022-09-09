@@ -7,3 +7,6 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
 <h1>PROJECTS 
 <br>
 ASasadasdsa Aasdsad(https://www.lipsum.com/)
+
+[An Internal Link](/guides/content/editing-an-existing-page)
+
