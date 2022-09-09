@@ -10,5 +10,5 @@ ASasadasdsa Aasdsad(https://www.lipsum.com/)
 
 [Project Sdasdasd](https://github.com/yagiiiz)
 <br> 
-~~ it was a mistake~~
+~~it was a mistake~~
 
