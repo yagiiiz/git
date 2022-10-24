@@ -91,3 +91,13 @@
 .active {
   background-color: #04AA6D; /* Add an active/current color */
 }
+.kendim{
+  background-color: blueviolet;
+ /*  margin-bottom: 50%; */
+  margin-top: 75px;
+  font-family:'Courier New', Courier, monospace;
+  height: 150px;
+  right: 150px;
+  width: 150px;
+
+}
