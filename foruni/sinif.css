@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    outline:none;
+    box-sizing: border-box; /* why not*/
+    outline:none; /* duruma göre*/
 }
 
 /*body{
@@ -25,3 +25,14 @@ body{
     eğer rem yaparsak html'in default olan boyutunu alır.ama eğer tanımlarsak html etiketi içinde onun değerini alır (root)  m/rem/vh */ 
     font-size: 30px;
 }
+/* class kullanılmadığında sayfa içindeki tüm etiketler bundan etkilenir*/
+
+h1.test{
+    color: crimson;
+}
+.tasiyici{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
