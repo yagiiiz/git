@@ -30,9 +30,13 @@ body{
 h1.test{
     color: crimson;
 }
-.tasiyici{
+.tasiyici{ 
     width: 1000px;
     height: auto;
     margin: 0 auto;
 }
+/* tasiyicida ve h1.teste de bir problem var.  body ayarlarını da kontrol et. 
 
+
+
+*/
