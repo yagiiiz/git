@@ -27,7 +27,7 @@ body{
 }
 /* class kullanılmadığında sayfa içindeki tüm etiketler bundan etkilenir*/
 
-h1.test{
+.h1.test{
     color: crimson;
 }
 .tasiyici{ 
@@ -35,8 +35,9 @@ h1.test{
     height: auto;
     margin: 0 auto;
 }
-/* tasiyicida ve h1.teste de bir problem var.  body ayarlarını da kontrol et. 
 
-
-
-*/
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
