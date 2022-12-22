@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.test {
+    color: #ab9e19;
+}
+
+/* GENEL TANIMLAMALAR */
+.tasiyici {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.button {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: .5rem 2rem;
+    border: 1px solid #f2f2f2;
+    color: #000;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+.button:hover {
+    background-color: #e1e1e1;
+    border-color: #e1e1e1;
+    cursor: pointer;
+}
+.btn-01 {
+    background-color: #ab9e19;
+    border-color: #ab9e19;
+}
+.btn-01:hover {
+    background-color: #958a14;
+    border-color: #958a14;
+    color: #fff;
+}
+.btn-02 {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.btn-02:hover {
+    background-color: #958a14;
+    border-color: #958a14;
+    color: #fff;
+}
+.br-10 {
+    border-radius: 100px;
+}
+.btn-elips {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    line-height: 100px;
+    text-align: center;
+    padding: 0;
+}
+.mh-button {
+    display: block;
+    padding: 1rem;
+    font-size: .7rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #958a14;
+    color: #ffffff;
+    z-index: 999;
+    border-radius: 1rem 1rem 0 1rem;
+}
+.title {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.mb-2 {
+    margin-bottom: 2rem !important;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+/* HEADER */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+header .tasiyici {
+    height: inherit;
+}
+.anamenu-alan {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.anamenu ul {
+    list-style: none;
+    display: flex;
+}
+.anamenu a {
+    color: #000;
+    margin: 0 2rem;
+    position: relative;
+}
+.anamenu .current {
+    color: #958a14;
+}
+.anamenu .current::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #958a14;
+}
+
+/* ------------------- SLIDER ---------------- */
+#slider, #subpage-title {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+    background-color: #f2f2f2;
+    background: url(../img/gorsel.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#slider {
+    height: 400px;
+}
+#subpage-title {
+    height: 100px;
+}
+#slider::after,
+#subpage-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: blue;
+    opacity: .4;
+}
+#slider .tasiyici,
+#slider .slider-alan,
+#subpage-title .tasiyici,
+#subpage-title .slider-alan {
+    height: 100%;
+}
+.slider-alan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.slider-alan h1,
+.slider-alan h3 {
+    color: #fff;
+}
+.slider-alan .button {
+    margin-top: 2rem;
+}
+.slider__img {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.slider__img img {
+    width: 100%;
+    border: 5px solid #fff;
+    box-shadow: 5px 15px 25px rgba(0, 0, 0, .7);
+}
+
+/* CONTENT */
+section.haber,
+section.hakkimizda,
+section.referans,
+section.iletisim {
+    padding: 5rem 0;
+}
+.haber-alan,
+.referans-alan {
+    display: flex;
+}
+.haber__item {
+    width: 33.333%;
+}
+.haber__item * {
+    display: block;
+}
+.haber__item .haber__item-title:hover {
+    color: #958a14;
+}
+.haber__item .haber__item-date {
+    color: #555555;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+section.hakkimizda {
+    background-color: #f1f1f1;
+}
+.referans-alan figure {
+    width: 16.66%;
+    height: 90px;
+    padding: 1em;
+    position: relative;
+}
+.referans-alan figure img {
+    width: 90%;
+    position: absolute;
+    transition: all ease-in 300ms;
+}
+.referans-alan figure:hover img {
+    width: 100%;
+}
+.iletisim-alan {
+    display: flex;
+    gap: 2rem;
+}
+#iletisim-form input,
+#iletisim-form textarea,
+#iletisim-form select {
+    display: block;
+    width: 300px;
+    margin-bottom: 1rem;
+    padding: .4rem;
+}
+/* FOOTER */
+footer {
+    background: rgb(17,10,134);
+background: linear-gradient(321deg, rgba(17,10,134,1) 0%, rgba(36,36,199,1) 35%, rgba(0,212,255,1) 100%);
+    color: #ffffff;
+    padding: 5rem;
+}
+.footer-alan {
+    display: flex;
+    flex-direction: column;
+}
+.footer-alan .anamenu {
+    display: flex;
+    justify-content: center;
+}
+.footer-alan .anamenu a {
+    color: #ffffff;
+    font-size: 1rem;
+}
+.footer-alan .anamenu a:hover {
+    text-decoration: underline;
+}
+footer .copyright {
+    text-align: center;
+    font-size: .8rem;
+    margin-top: 2rem;
+}

@@ -6,11 +6,14 @@
 #    print("a beşten büyük")
 #else:
 #    print("a beşten küçük")
-yildiz=5
-for(i=1;i<=yildiz;++i):
-    for(j=1;j<=i;j++):
-        if(i+j<=yildiz+1):
-            print("*")
-        else:
-            print(" ")
-        
+
+#string metodları - len()
+#gel_yaz="gelecegi_yazanlar"
+#del mvk
+#a=9
+#b=10
+#a*b
+#len(gel_yaz)
+
+
+       
